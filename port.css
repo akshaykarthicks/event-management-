@@ -1,0 +1,159 @@
+/* Reset some default styling */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;
+}
+
+/* Hero section */
+#hero {
+    background: url("C:\Users\aksha\Documents\WhatsApp Image 2023-08-17 at 17.41.54.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #FF6B6B;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Project section */
+#projects {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #111;
+}
+
+/* Project section */
+#projects {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #111;
+}
+
+.project {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-top: 20px;
+}
+
+.project p {
+    margin-top: 10px;
+    color: #888;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* About and Contact sections */
+#about, #contact {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #111;
+}
+
+#about h2, #contact h2 {
+    margin-bottom: 20px;
+    color: #FF6B6B;
+}
+
+/* Contact section */
+#contact p {
+    margin-bottom: 15px;
+}
+/* ... Previous CSS code ... */
+
+/* About section */
+#about {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #111;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Apply circular border */
+    width: 200px; /* Adjust the width to your preference */
+    height: 200px; /* Keep the aspect ratio */
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* ... Rest of the CSS code ... */

@@ -7,7 +7,7 @@
       
   
     </div>
-    <form href="insert.php" method="POST" id="indexxx">
+    <form method="post" action="http://127.0.0.1:5500/index3.html">
       <link rel="stylesheet" href="styleee2.css">
       <h1>BOOK NOW </h1>
       <div class="form-row">
@@ -23,8 +23,8 @@
         <input type="tel" id="phone" name="phone" required>
       </div>
       <div class="form-row">
-        <label for="event-type" >Event Type</label>
-        <select id="event-type" name="eventtype" required>
+        <label for="event-type">Event Type</label>
+        <select id="event-type" name="event-type" required>
           <option value="">Select an option</option>
           <option value="wedding">Wedding</option>
           <option value="birthday">Birthday</option>5
@@ -41,10 +41,28 @@
       </div>
       <div class="form-row">
         <p>NOTE: Advance payment is ₹3000</p>
-        <button type="submit" name=""    onclick="location.href='http://127.0.0.1:5501/index3.html '"> submit</button>
+        <a href="http://127.0.0.1:5500/index3.html">
+          <button class="btn" onclick="sumbit" href="http://127.0.0.1:5500/index3.html">submit</button>
+        </a>
  
         
     </form>
+    <script>
+      const form = document.querySelector('form');
+      const nameInput = document.querySelector('#name');
+      const emailInput = document.querySelector('#email');
 
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+
+        if (name === '' || email === '') {
+          alert('Please fill out all fields');
+        } else {
+          window.location.href = 'http://127.0.0.1:5500/index3.html';
+        }
+      });
+    </script>
   </div>
   

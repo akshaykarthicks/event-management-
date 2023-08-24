@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    padding-top: 80px;
+    
+
+}
+h1{
+    color: #14addc;
+    text-transform: uppercase;
+    padding-bottom: 65px;
+    letter-spacing: 15px;
+
+}
+.gallery_photo{
+    width: 230px;
+    height: 250px;
+}
